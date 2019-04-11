@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="TranAppTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--
+        <item name="android:windowIsFloating">true</item>
+        -->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_main_color</item>
+        <item name="android:textSize">@dimen/text_size_label</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ButtonStyle" parent="TextStyle">
+        <item name="android:layout_width">@dimen/main_btn_w</item>
+        <item name="android:layout_height">@dimen/main_btn_h</item>
+        <item name="android:textSize">@dimen/text_size_btn</item>
+        <item name="android:background">@drawable/btn_bk</item>
+    </style>
+
+</resources>

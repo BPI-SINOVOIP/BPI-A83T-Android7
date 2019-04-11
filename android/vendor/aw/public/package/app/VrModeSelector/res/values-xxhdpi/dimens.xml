@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- 560dpi: density: 3.5 -->
+    <!-- 36px -->
+    <dimen name="text_size_label">10.28sp</dimen>
+    <!-- 48px -->
+    <dimen name="text_size_btn">13.71sp</dimen>
+
+
+    <!-- main activity -->
+    <!-- 24px -->
+    <dimen name="main_label_padding">6dp</dimen>
+    <!-- 58px -->
+    <dimen name="main_btn_padding_v">16.57dp</dimen>
+
+    <!-- 107px -->
+    <dimen name="main_btn_padding_h">30.57dp</dimen>
+    <!-- 328px -->
+    <dimen name="main_btn_w">93.71dp</dimen>
+    <!-- 140px -->
+    <dimen name="main_btn_h">40dp</dimen>
+
+</resources>

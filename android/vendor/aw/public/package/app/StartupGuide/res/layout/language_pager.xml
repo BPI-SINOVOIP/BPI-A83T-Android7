@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_cn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/languagebutton_selector"
+            android:text="@string/Chinese"
+            android:textColor="@color/textcolor_selector"
+            android:textSize="@dimen/languagepager_button_text"/>
+        <Button
+            android:id="@+id/btn_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/languagepager_button_marginLeft"
+            android:background="@drawable/languagebutton_selector"
+            android:text="@string/English"
+            android:textColor="@color/textcolor_selector"
+            android:textSize="@dimen/languagepager_button_text"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/arrowright_selector"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+service bootmusic /system/bin/bootmusic
+    class core
+    user graphics
+    group graphics audio cache
+    disabled
+    oneshot
+    seclabel u:r:bootanim:s0
+
+on property:service.bootanim.exit=0
+    start bootmusic

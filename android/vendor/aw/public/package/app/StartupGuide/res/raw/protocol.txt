@@ -1,0 +1,67 @@
+﻿The user uses the protocol
+Welcome to "VROS" software
+"VROS" software (hereinafter referred to as "the Software") is a user help software developed by Zhuhai AAA Company Communications Equipment Co., Ltd. (hereinafter referred to as "AAA Company" or "We"), the intellectual property of the Software (including But not limited to the software copyright, patent, trademark rights) are owned by AAA companies. Before you use this software, please be sure to carefully read and fully understand the contents of this User Agreement (hereinafter referred to as "this Agreement"). When you choose to use the Software, you are deemed to have understood and fully agree with all the contents of this Agreement and voluntarily assume full responsibility for and use of the Software. If you do not agree to this agreement, please immediately stop using the software.
+
+This Agreement mainly contains the following:
+Intellectual property statement
+Service or Content Provided by the Software Where the service is indicated by a text or icon, the final content is determined and provided by a third party, and AAA Company does not conduct any review of its contents. No part of this document may be reproduced, reproduced, compiled, edited, downloaded, imitated, copied, redistributed, copied, copied, copied, copied, copied, copied, copied, copied, copied , To carry out restoration works, decompilation, reverse translation or other means of commercial use.
+The use of the software
+1. How to use the software
+You can choose the help object in the software, accept help object help (for voice, mobile phone image transmission), get help after the help to help people. Your use should be in compliance with laws, regulations and policies, and comply with the contents of this Agreement. You do not accept any responsibility for any content that you disclose in this software or through the software and does not reflect or represent, nor shall it be deemed to reflect or represent AAA's opinions, positions or policies.
+
+2. The software fee statement
+The software provides free software services. But you must pay for the cost of purchasing the software's value-added services and the costs of communication and information charges arising from the use of the software.
+Your rights and obligations
+1. Your right scope
+(1) You have the right to advise, advise and advise AAA Company on the basis of your own interests, protection or improvement of the Software Services.
+
+2. Your basic obligation
+(1) You should be responsible for all your actions. You are not allowed to use the mobile phone service to violate national laws and regulations or infringe upon the legitimate rights of third parties; you may not harm the goodwill and image, copyright and other rights of AAA Company.
+(2) You may not make any sale, sale, license or use of the Software and related data for any other purpose for business purposes.
+(3) You may not modify, adapt, translate, reverse compile, reverse engineer, etc. of the Software and its derivative products.
+In the event of any loss to AAA Company in violation of the laws and regulations of this State or the agreement, you shall promptly eliminate the influence on AAA Company and compensate any loss caused by AAA Company.
+Rights restrictions
+1 . You should use the software in the process of using the software, should consciously abide by laws and regulations and policies and regulations, shall not use the software engaged in the following activities:
+(1) to undermine the basic principles established by the Constitution;
+(2) endangering national security, divulging state secrets, subverting state power and undermining national unity;
+(3) damage to national honor and interest;
+(4) incite national hatred, ethnic discrimination, destruction of national unity;
+(5) to undermine the national religious policy, to promote cults and feudal superstition;
+(6) spread rumors, disturb the social order, undermine social stability;
+(7) the dissemination of obscenity, pornography, gambling, violence, murder, terror or abetting the crime;
+(8) insult or slander others, against the legitimate rights and interests of others;
+(9) Other activities prohibited by laws and regulations.
+
+2. You may not use the software to produce, upload, copy, publish, disseminate the following violations of other users or third parties legitimate rights and interests of the content:
+(1) contains any sexual or sexual suggestion;
+(2) contain harassment, abuse, intimidation, threatening content;
+(3) contains malicious information, trick information, false information;
+(4) contains illegal marketing information, spam advertising;
+(5) relating to the privacy, personal information or information of others;
+(6) infringe upon the legitimate rights of others, such as right of reputation, portraits, intellectual property rights, trade secrets;
+(7) other violations of other users or third parties legitimate rights and interests of the content.
+
+3. You may not use the Software for any malicious purpose, including but not limited to the publication or dissemination of computer viruses, tampering or destruction of system data, interference with the use of others.
+
+4. You may not collect other user information or access system data without the express authorization of the user.
+
+5. When you violate the obligations, rights restrictions and other legal provisions agreed under this Agreement, AAA reserves the right to delete your relevant information, data, etc. without notice to you. When you seriously violate the above requirements, AAA reserves the right to terminate the provision of the Software Services at any time without notice.
+privacy protection
+The term "privacy" as used in this Agreement includes Article 4 of the Provisions on the Protection of Personal Information of Telecommunications and Internet Users and the personal information specified in the relevant laws and regulations.
+We collect your two kinds of information: personal information (personal information is data that can be used to uniquely identify or contact someone) and non-personal information (ie, data that is not directly associated with any particular person). If we combine non-personal information with personal information, such information will be treated as personal information during the period of consolidation.
+When you register this software, the software will obtain the information of the mobile phone number, contact list, equipment number (IMEI number, SN number) you provide, which is the basis for obtaining the software service. At the same time, in order to optimize the service, the software will obtain additional information related to the promotion of services, such as when you use the software, the software will collect functional behavior data, device information, etc. in order to optimize the service.
+AAA Company has always attached importance to the protection of personal information of the user, AAA company will ensure that your registration information and your use of the software generated by the non-public content for any illegal use, without your consent AAA company does not disclose to any third party , Reveal your personal information. Except in the following particular cases:
+(1) disclose your personal information in accordance with the laws and regulations or the requirements of the authorities;
+(2) the disclosure of personal information due to the fact that you have not confirmed the correct helper status by voice recognition, the disclosure of personal information caused by the action of the helper or the disclosure of personal information caused by the cause of the AAA company;
+(3) you disclose your personal information to a third party on your own;
+(4) Your agreement with AAA Company and your partner regarding the use of your personal information has been agreed upon, and AAA Company has disclosed your personal information to the Partner;
+(5) due to the particularity of the Internet, any personal attacks due to hacker attacks, computer viruses and other force majeure events.
+Disclaimer
+AAA does not make any express or implied warranties or warranties of any kind, opinion, opinion or other information transmitted through the Software in any form, and AAA reserves the right to manage the content that you store and distribute.
+AAA does not guarantee that the software service meets your requirements and does not guarantee that the software service will not be interrupted and terminated. AAA does not assume any responsibility for any services that may be provided by the Software, such as network conditions, communication lines, or regulatory requirements, for any reason.
+legal liability
+1. You shall use the Software reasonably and in good faith to cause the Company to be harmed or subjected to a third party action as a result of your use, and we reserve the right to claim damages, including but not limited to your misconduct Loss, litigation costs, attorneys' fees, appraisal fees, travel expenses.
+
+2. This Agreement shall be governed by the laws of the People's Republic of China. Any dispute arising from this Agreement and the use of the Software shall be settled on the basis of the principle of friendly and mutually beneficial negotiation, and the negotiation shall be made without the consent of the People 's Court of the place where the AAA company is located.
+Amendments to this Agreement
+In order to make the software service in line with business operations requirements, laws and regulations, this agreement will be modified at any time. You should be concerned about the use of timely, we do not assume the responsibility or notice obligations. If you continue to use the Software after the modification of this Agreement, you are deemed to understand and accept the modification of this Agreement.

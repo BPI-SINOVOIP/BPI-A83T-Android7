@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">模式选择</string>
+
+    <string name="label_1">小贴士：</string>
+    <string name="label_2">如果发现屏幕异常，只要短按菜单按钮，</string>
+    <string name="label_3">就可以轻松切换现实模式了！</string>
+
+    <string name="vr_mode">VR模式</string>
+    <string name="normal_mode">普通模式</string>
+
+</resources>

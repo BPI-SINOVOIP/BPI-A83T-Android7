@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/tutorial_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/adjustpager_marginTop"
+        android:layout_marginBottom="@dimen/adjustpager_marginButtom"
+        >
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/stubview_failure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/stubview_layout_failure"/>
+
+    <include
+        android:id="@+id/stubview_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/stubview_layout_success"/>
+
+    <ImageButton
+        android:id="@+id/nextpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:src="@drawable/arrowright_selector"/>
+
+    <LinearLayout
+        android:id="@+id/llayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/redemo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/adjust_buttonbottom"
+
+            android:background="@drawable/button_selector"
+            android:onClick="onclicklistener"
+            android:text="@string/Redemonstrate"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/adjust_buttontextsize"/>
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/adjust_buttonbottom"
+            android:layout_marginLeft="@dimen/adjust_buttonpadding"
+
+            android:background="@drawable/button_selector"
+            android:onClick="onclicklistener"
+            android:text="@string/StartCorrection"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/adjust_buttontextsize"/>
+    </LinearLayout>
+ <LinearLayout
+        android:id="@+id/llayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/start2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/adjust_buttonbottom"
+
+            android:background="@drawable/button_selector"
+            android:onClick="onclicklistener"
+            android:text="@string/StartCorrection"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/adjust_buttontextsize"/>
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/adjust_buttonbottom"
+            android:layout_marginLeft="@dimen/adjust_buttonpadding"
+            android:background="@drawable/button_selector"
+            android:onClick="onclicklistener"
+            android:text="@string/Skip"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/adjust_buttontextsize"/>
+    </LinearLayout>
+
+</RelativeLayout>

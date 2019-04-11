@@ -1,0 +1,10 @@
+service htserver /system/bin/htserver
+	user root
+	group root
+	disabled
+    oneshot
+	seclabel u:r:awinit:s0
+
+on property:sys.sensorservice_init=1
+    start htserver
+

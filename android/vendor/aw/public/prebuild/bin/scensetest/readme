@@ -1,0 +1,14 @@
+1、编译时将Android改为Android.mk
+2、将$(cout)/system/bin/powertest  push到/system/bin/
+3、使用方法：adb shell powertest + 参数
+    control模式:
+        参数：[enable][disable] bootcomplete 开启或关闭bootcomplete模式的调节
+        参数：[enable][disable] benchmark    开启或关闭benchmark模式的调节
+        参数：[enable][disable] normal       开启或关闭normal模式的调节
+        参数：[enable][disable] music        开启或关闭music模式的调节
+    debug模式:
+        参数：enter  bootcomplete            进入bootcomplete模式
+        参数：enter  benchmark               进入benchmark模式
+        参数：enter  normal                  进入normal模式
+        参数：enter  music                   进入music模式
+        参数：resume                         退出debug模式

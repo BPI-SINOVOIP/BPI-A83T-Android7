@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_tab_margintop">70dp</dimen>
+    <dimen name="activity_tabtext">18dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_left">40dp</dimen>
+    <dimen name="activity_right">40dp</dimen>
+    <dimen name="languagepager_button_marginLeft">88dp</dimen>
+    <dimen name="success_Imagebutton_marginTop">100dp</dimen>
+    <dimen name="adjustpager_marginTop">46.8dp</dimen>
+    <dimen name="adjustpager_marginButtom">46.8dp</dimen>
+    <dimen name="languagepager_button_text">19.2dp</dimen>
+    <dimen name="success_Text_marginTop">19.2dp</dimen>
+    <dimen name="success_TextSize">19.2dp</dimen>
+    <dimen name="protocol_textview_layout_marginBottom">12.8dp</dimen>
+    <dimen name="protocol_textview_layout_marginTop">21.8dp</dimen>
+    <dimen name="protocol_TextSize">15.2dp</dimen>
+    <dimen name="protocol_ButtonScrollView_padding">12dp</dimen>
+    <dimen name="protocol_ButtonScrollView_layout_width">528dp</dimen>
+    <dimen name="protocol_ButtonScrollView_layout_height">172dp</dimen>
+    <dimen name="protocol_ButtonScrollView_layout_marginLeft">64dp</dimen>
+    <dimen name="protocol_ButtonScrollView_layout_marginRight">12dp</dimen>
+    <dimen name="protocol_upbutton_layout_marginTop">25.8dp</dimen>
+    <dimen name="protocol_textview_layout_marginRight">4dp</dimen>
+    <dimen name="protocol_downbutton_layout_marginTop">24.4dp</dimen>
+    <dimen name="protocol_downbutton_padding">26.4dp</dimen>
+    <dimen name="protocol_button_layout_marginTop">28.4dp</dimen>
+    <dimen name="protocol_buttontext">19.2dp</dimen>
+    <dimen name="protocol_text_layout_marginTop">12dp</dimen>
+    <dimen name="protocol_buttomTextSize">15.2dp</dimen>
+    <dimen name="adjust_buttonbottom">46.8dp</dimen>
+    <dimen name="adjust_buttonpadding">84dp</dimen>
+    <dimen name="adjust_buttontextsize">19.2dp</dimen>
+
+    <dimen name="activity_tabpadding">5dp</dimen>
+
+</resources>

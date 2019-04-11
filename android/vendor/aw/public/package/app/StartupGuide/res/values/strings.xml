@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StartupGuide</string>
+    <string name="action_settings">Settings</string>
+    <string name="LanguageSetting">Language Setting</string>
+    <string name="BasicAdjust">Basic Adjust</string>
+    <string name="StartUsing">Start Using</string>
+    <string name="Redemonstrate">Replay</string>
+    <string name="StartCorrection">Start</string>
+    <string name="UserProtocol">User Protocol</string>
+    <string name="Chinese">Chinese</string>
+    <string name="English">English</string>
+    <string name="bottomtext">Click start indicate you have agreed to User Protocol</string>
+    <string name="AdjustSuccess">Correct success</string>
+    <string name="AdjustFailure">Correct failure</string>
+	<string name="Skip">Skip</string>
+    <string name="FailureAnnotations">Tip: do not shake the machine while you rectified! it makes easier correct success</string>
+    <string name="FailureSecondAnnotations">Tip:Has the correction been broken? You might as well skip it for a while and we will try to correct it for you</string>
+</resources>

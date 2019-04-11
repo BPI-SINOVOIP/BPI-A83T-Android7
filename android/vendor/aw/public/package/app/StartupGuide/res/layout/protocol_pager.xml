@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_label_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/protocol_textview_layout_marginBottom"
+        android:layout_marginTop="@dimen/protocol_textview_layout_marginTop"
+        android:text="@string/UserProtocol"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/protocol_TextSize"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.allwinner.startupGuide.View.ButtonScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="@dimen/protocol_ButtonScrollView_layout_width"
+            android:layout_height="@dimen/protocol_ButtonScrollView_layout_height"
+            android:layout_marginRight="@dimen/protocol_ButtonScrollView_layout_marginRight"
+            android:background="@drawable/textbg"
+            android:fadeScrollbars="false"
+            android:fillViewport="true"
+            android:padding="@dimen/protocol_ButtonScrollView_padding"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarThumbVertical="@drawable/slider"
+            android:scrollbarTrackVertical="@drawable/slider_full"
+            android:scrollbars="vertical">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/protocol_textview_layout_marginRight"
+                android:text="@string/UserProtocol"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/protocol_TextSize"/>
+        </com.allwinner.startupGuide.View.ButtonScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/protocol_upbutton_layout_marginTop"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/upbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow_selector"/>
+            <ImageButton
+                android:id="@+id/downbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/protocol_upbutton_layout_marginTop"
+                android:background="@drawable/arrowdown_selector"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/startlauncher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/protocol_button_layout_marginTop"
+        android:background="@drawable/button_selector"
+        android:text="@string/StartUsing"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/protocol_buttontext"/>
+
+    <TextView
+        android:id="@+id/tv_label_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/protocol_text_layout_marginTop"
+        android:text="@string/bottomtext"
+        android:textColor="#666666"
+        android:textSize="@dimen/protocol_buttomTextSize"/>
+
+</LinearLayout>

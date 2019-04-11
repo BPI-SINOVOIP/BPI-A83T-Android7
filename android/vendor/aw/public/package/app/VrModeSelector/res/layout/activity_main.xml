@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ff000000">
+
+    <TextView
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:text="@string/label_1"/>
+    <TextView
+        style="@style/TextStyle"
+        android:layout_marginTop="@dimen/main_label_padding"
+        android:text="@string/label_2"/>
+    <TextView
+        style="@style/TextStyle"
+        android:layout_marginTop="@dimen/main_label_padding"
+        android:text="@string/label_3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_btn_padding_v"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <CheckBox
+            style="@style/ButtonStyle"
+            android:id="@+id/btn_vr_mode"
+            android:text="@string/vr_mode"
+            android:button="@null"/>
+        <CheckBox
+            style="@style/ButtonStyle"
+            android:id="@+id/btn_normal_mode"
+            android:layout_marginLeft="@dimen/main_btn_padding_h"
+            android:text="@string/normal_mode"
+            android:button="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

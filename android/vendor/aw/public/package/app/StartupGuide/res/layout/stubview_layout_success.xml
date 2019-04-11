@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/success_Imagebutton_marginTop"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+
+            android:src="@drawable/adjust_success" />
+        <TextView
+            android:id="@+id/success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/success_Text_marginTop"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:text="@string/AdjustSuccess"
+            android:textSize="@dimen/success_TextSize" />
+    </LinearLayout>
+
+</RelativeLayout>

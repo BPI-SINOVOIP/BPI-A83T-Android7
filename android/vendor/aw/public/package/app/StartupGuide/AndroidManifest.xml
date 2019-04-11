@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+android:sharedUserId="android.uid.system"
+-->
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.allwinner.startupGuide"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:theme="@android:style/Theme.NoTitleBar">
+
+        <meta-data android:name="android.SETUP_VERSION" android:value="eclair_1"/>
+
+        <!--
+        <category android:name="android.intent.category.HOME"/>
+        -->
+        <activity
+            android:name="com.allwinner.startupGuide.MainActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:lockTaskMode="normal"
+
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|locale|layoutDirection"
+            android:screenOrientation="landscape">
+            <intent-filter android:priority="5">
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.SETUP_WIZARD"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="yellow">#FFFF00</color>
+    <color name="aqua">#00dd97</color>
+    <color name="red">#FF0000</color>
+    <color name="tabcolor">#666666</color>
+    <color name="tabselectcolor">#FFFFFF</color>
+    <color name="main_bk_color">#ff1c1c1c</color>
+
+</resources>

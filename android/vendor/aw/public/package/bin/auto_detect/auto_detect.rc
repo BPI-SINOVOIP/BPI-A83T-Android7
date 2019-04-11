@@ -1,0 +1,9 @@
+service auto_detect /system/bin/auto_detect
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:awinit:s0
+
+on fs
+    start auto_detect

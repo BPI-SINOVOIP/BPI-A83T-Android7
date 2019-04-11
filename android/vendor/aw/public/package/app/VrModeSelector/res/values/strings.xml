@@ -1,0 +1,14 @@
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">VrModeSelector</string>
+
+    <string name="label_1">Tip：</string>
+    <string name="label_2">If display is not normal，pressed menu button,</string>
+    <string name="label_3">you can select display mode！</string>
+
+    <string name="vr_mode">VR Mode</string>
+    <string name="normal_mode">Normal Mode</string>
+
+</resources>

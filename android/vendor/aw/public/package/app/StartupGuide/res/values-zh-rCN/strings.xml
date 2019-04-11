@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StartupGuide</string>
+    <string name="action_settings">Settings</string>
+    <string name="LanguageSetting">语言设置</string>
+    <string name="BasicAdjust">基础调节</string>
+    <string name="StartUsing">开始使用</string>
+    <string name="Redemonstrate">重新演示</string>
+    <string name="StartCorrection">开始矫正</string>
+    <string name="UserProtocol">用户使用协议</string>
+    <string name="Chinese">中文</string>
+    <string name="English">英文 </string>
+    <string name="bottomtext">点击开始表示您已同意用户使用协议</string>
+    <string name="AdjustSuccess">矫正成功</string>
+    <string name="AdjustFailure">矫正失败</string>
+    <string name="Skip">跳过</string>
+    <string name="FailureAnnotations">小贴士：矫正过程中，请不要摇晃机子，让机子保持静止状态会更容易矫正成功哦！</string>
+    <string name="FailureSecondAnnotations">小贴士：一直矫正失败？不妨先暂时跳过，我们将会努力为您继续矫正。</string>
+</resources>
