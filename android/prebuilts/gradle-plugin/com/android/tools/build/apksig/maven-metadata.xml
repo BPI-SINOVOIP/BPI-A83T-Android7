@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.android.tools.build</groupId>
+  <artifactId>apksig</artifactId>
+  <versioning>
+    <release>2.3.0-alpha1</release>
+    <versions>
+      <version>2.3.0-alpha1</version>
+    </versions>
+    <lastUpdated>20161111100037</lastUpdated>
+  </versioning>
+</metadata>
