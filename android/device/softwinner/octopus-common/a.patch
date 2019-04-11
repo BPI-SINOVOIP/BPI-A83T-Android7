@@ -1,0 +1,13 @@
+diff --git a/octopus-common.mk b/octopus-common.mk
+index a2f2046..c325708 100755
+--- a/octopus-common.mk
++++ b/octopus-common.mk
+@@ -79,7 +79,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
+     ro.sys.cputype=UltraOcta-A83
+ 
+ PRODUCT_PROPERTY_OVERRIDES += \
+-    ro.product.firmware=v7.0rc4
++    ro.product.firmware=v7.0rc5
+ 
+ PRODUCT_PROPERTY_OVERRIDES += \
+      debug.hwc.showfps=0

@@ -1,0 +1,14 @@
+*.out
+*.a
+*.elf
+*.o
+*~
+*.d
+*.bin
+firmware/links
+firmware/toolchain
+*.napp
+# exclude IDE project files/directories
+.*
+# keep .gitignore and other important hidden files
+!.gitignore

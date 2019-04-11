@@ -1,0 +1,46 @@
+allow untrusted_app zygote:unix_dgram_socket getattr;
+allow untrusted_app debugfs:file getattr;
+allow untrusted_app storage_stub_file:dir getattr;
+allow untrusted_app system_app_data_file:dir { search getattr };
+allow untrusted_app storage_file:file { read open };
+allow untrusted_app self:udp_socket ioctl;
+allow untrusted_app logger_file:dir getattr;
+
+allow system_server media_rw_data_file:dir relabelfrom;
+
+allow untrusted_app domain:dir { getattr search };
+allow untrusted_app domain:file { read getattr open };
+allow untrusted_app domain:lnk_file read;
+allow untrusted_app property_type:file { getattr open };
+
+allow untrusted_app block_device:dir { getattr search };
+allow untrusted_app block_device:blk_file getattr;
+allow untrusted_app cache_block_device:blk_file getattr;
+allow untrusted_app system_block_device:blk_file getattr;
+allow untrusted_app userdata_block_device:blk_file getattr;
+allow untrusted_app sysfs_zram:dir search;
+allow untrusted_app sysfs_zram:file { read getattr open };
+allow untrusted_app sysfs:file {read open getattr};
+allow untrusted_app rootfs:dir { read open };
+allow untrusted_app rootfs:file getattr;
+allow untrusted_app debuggerd_exec:file { read open };
+allow untrusted_app log_block_device:blk_file getattr;
+allow untrusted_app proc_iomem:file getattr;
+allow untrusted_app proc_sysrq:file getattr;
+allow untrusted_app adbd_socket:sock_file getattr;
+allow untrusted_app dnsproxyd_socket:sock_file getattr;
+allow untrusted_app fwmarkd_socket:sock_file getattr;
+allow untrusted_app installd_socket:sock_file getattr;
+allow untrusted_app lmkd_socket:sock_file getattr;
+allow untrusted_app logd_socket:sock_file getattr;
+allow untrusted_app logdr_socket:sock_file getattr;
+allow untrusted_app logdw_socket:sock_file getattr;
+allow untrusted_app mdns_socket:sock_file getattr;
+allow untrusted_app netd_socket:sock_file getattr;
+allow untrusted_app property_socket:sock_file getattr;
+allow untrusted_app rild_debug_socket:sock_file getattr;
+allow untrusted_app rild_socket:sock_file getattr;
+allow untrusted_app sap_uim_socket:sock_file getattr;
+allow untrusted_app vold_socket:sock_file getattr;
+allow untrusted_app zygote_socket:sock_file getattr;
+

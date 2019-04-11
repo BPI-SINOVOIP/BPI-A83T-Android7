@@ -1,0 +1,7 @@
+# label graphics device with a new type, we need
+# to allow write operation from appdomain
+
+# gpu device labeling
+/dev/pvr_sync           u:object_r:gpu_device:s0
+/system/vendor/bin/pvrsrvctl u:object_r:pvrsrvctl_exec:s0
+

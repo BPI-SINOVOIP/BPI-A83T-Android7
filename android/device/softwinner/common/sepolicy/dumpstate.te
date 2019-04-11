@@ -1,0 +1,5 @@
+allow dumpstate media_rw_data_file:dir search;
+allow dumpstate block_device:blk_file getattr;
+allow dumpstate system_block_device:blk_file getattr;
+allow dumpstate userdata_block_device:blk_file getattr;
+allow dumpstate property_type:file { getattr open };

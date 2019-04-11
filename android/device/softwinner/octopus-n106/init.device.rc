@@ -1,0 +1,50 @@
+import init.wireless.realtek.rc
+import init.debug.rc
+
+on init
+    # Load persistent dm-verity state
+    verity_load_state
+
+on early-boot
+    # Update dm-verity state and set partition.*.verified properties
+    verity_update_state
+
+on boot
+    write /sys/devices/soc/cpu_budget_cool.7/roomage "1608000 4 1608000 4 2016000 4 2016000 4"
+    ### csi module
+    insmod /system/vendor/modules/videobuf2-core.ko
+    insmod /system/vendor/modules/videobuf2-memops.ko
+    insmod /system/vendor/modules/videobuf2-dma-contig.ko
+    insmod /system/vendor/modules/vfe_io.ko
+    insmod /system/vendor/modules/ov5640.ko
+    insmod /system/vendor/modules/gc2145.ko
+    insmod /system/vendor/modules/vfe_v4l2.ko
+
+    ### network
+    insmod /system/vendor/modules/usbnet.ko
+    insmod /system/vendor/modules/asix.ko
+    insmod /system/vendor/modules/qf9700.ko
+    insmod /system/vendor/modules/mcs7830.ko
+    insmod /system/vendor/modules/rtl8150.ko
+    insmod /system/vendor/modules/cdc_ether.ko
+    insmod /system/vendor/modules/smsc75xx.ko
+    insmod /system/vendor/modules/rtl_bluesleep.ko
+    insmod /system/vendor/modules/smsc95xx.ko
+
+    ### bluetooth
+    # UART device
+    chmod 0660 /dev/ttyS1
+    chown bluetooth net_bt_stack /dev/ttyS1
+    # Realtek USB device
+    # chmod 0660 /dev/rtk_btusb
+    # chown bluetooth net_bt_stack /dev/rtk_btusb
+
+service ril-daemon /system/bin/rild
+    class main
+    socket rild stream 660 root radio
+    socket sap_uim_socket1 stream 660 bluetooth bluetooth
+    socket rild-debug stream 660 radio system
+    user root
+    group radio cache inet misc audio log
+
+

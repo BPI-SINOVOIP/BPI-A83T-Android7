@@ -1,0 +1,39 @@
+type log_bg, domain, file_type;
+type log_bg_exec, exec_type, file_type;
+init_daemon_domain(log_bg)
+
+allow log_bg log_bg:capability { dac_override dac_read_search sys_admin sys_resource kill chown };
+allow log_bg log_bg:capability2 { syslog };
+allow log_bg kernel:system { syslog_mod };
+allow log_bg kernel:process { sigkill signull };
+allow log_bg log_bg:dir { read open getattr write add_name create read remove_name };
+allow log_bg log_bg:file { read open getattr create append write rename unlink };
+allow log_bg proc:file { read open getattr };
+allow log_bg system_app_data_file:dir { search };
+allow log_bg system_app_data_file:file { read write open getattr };
+allow log_bg app_data_file:dir { search write add_name getattr };
+allow log_bg app_data_file:file { create open  getattr setattr read write append};
+allow log_bg rootfs:file { execute execute_no_trans };
+allow log_bg rootfs:lnk_file { getattr };
+allow log_bg toolbox_exec:file { getattr execute read open execute_no_trans };
+allow log_bg system_app:dir { getattr search };
+allow log_bg system_app:file { open read };
+allow log_bg logdr_socket:sock_file { write };
+allow log_bg logd:unix_stream_socket { connectto };
+allow log_bg property_socket:sock_file { write };
+allow log_bg shell_exec:file { read execute open execute_no_trans entrypoint getattr };
+allow log_bg logger_file:dir { getattr search read write open add_name remove_name };
+allow log_bg logger_file:file { read write create open append getattr unlink };
+allow log_bg sysfs:file { write };
+allow log_bg init:unix_stream_socket connectto;
+allow log_bg system_file:file { execute_no_trans };
+allow log_bg fuse:dir { search write add_name read create open };
+allow log_bg fuse:file { create write open append getattr };
+allow log_bg storage_file:dir { search read open getattr write add_name create };
+allow log_bg storage_file:file { read open getattr write create };
+allow log_bg logcat_exec:file { read execute open execute_no_trans entrypoint getattr };
+allow log_bg tmpfs:dir { search read open getattr write add_name create };
+
+#allow log_bg default_prop:property_service set;
+allow log_bg ctl_default_prop:property_service set;
+

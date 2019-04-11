@@ -1,0 +1,42 @@
+# astar   A33
+# tulip   A64
+# kylin   A80
+# octopus A83
+# eagle   H8
+# default parameter of bluetooth module
+
+ap6210_baud_astar    1500000
+ap6210_baud_tulip    1500000
+ap6210_baud_kylin    2000000
+ap6210_baud_octopus  1500000
+ap6210_baud_eagle    1500000
+ap6210_btfw_name     bcm20710a1.hcd
+
+ap6212_baud_astar    1500000
+ap6212_baud_tulip    1500000
+ap6212_baud_kylin    2000000
+ap6212_baud_octopus  1500000
+ap6212_baud_eagle    1500000
+ap6212_btfw_name     bcm43438a0.hcd
+
+ap6234_baud_astar    1500000
+ap6234_baud_tulip    1500000
+ap6234_baud_kylin    2000000
+ap6234_baud_octopus  1500000
+ap6234_baud_eagle    1500000
+ap6234_btfw_name     bcm43341b0.hcd
+
+ap6335_baud_astar    1500000
+ap6335_baud_tulip    1500000
+ap6335_baud_kylin    2000000
+ap6335_baud_octopus  1500000
+ap6335_baud_eagle    1500000
+ap6335_btfw_name     bcm4339a0.hcd
+
+ap6476_baud_astar    1500000
+ap6476_baud_tulip    1500000
+ap6476_baud_kylin    2000000
+ap6476_baud_octopus  1500000
+ap6476_baud_eagle    1500000
+ap6476_btfw_name     bcm2076b1.hcd
+

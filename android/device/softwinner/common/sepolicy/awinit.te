@@ -1,0 +1,23 @@
+type awinit, domain;
+type awinit_exec, exec_type, file_type;
+init_daemon_domain(awinit)
+
+allow awinit cache_file:file create_file_perms;
+allow awinit cache_file:dir create_dir_perms;
+allow awinit rootfs:lnk_file getattr;
+allow awinit self:capability { sys_module dac_override };
+allow awinit sysfs:file rw_file_perms;
+allow awinit unlabeled:dir search;
+allow awinit servicemanager:binder{ call transfer };
+allow awinit system_server:binder call;
+allow awinit system_server:fd use;
+allow awinit system_server:unix_stream_socket{ read write };
+allow awinit htserver_service:service_manager add;
+allow awinit sensorservice_service:service_manager find;
+allow awinit permission_service:service_manager find;
+allow awinit device:file create_file_perms;
+allow awinit private_block_device:blk_file rw_file_perms;
+allow awinit toolbox_exec:file rx_file_perms;
+allow awinit init:unix_stream_socket connectto;
+allow awinit property_socket:sock_file write;
+allow awinit system_prop:property_service set;

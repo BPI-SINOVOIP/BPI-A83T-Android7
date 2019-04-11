@@ -1,0 +1,6 @@
+# access to /dev/cedar_dev
+allow cameraserver cedar_device:chr_file rw_file_perms;
+
+# access gpu to /dev/pvrsrvkm
+allow cameraserver gpu_device:chr_file rw_file_perms;
+allow cameraserver rootfs:lnk_file getattr;

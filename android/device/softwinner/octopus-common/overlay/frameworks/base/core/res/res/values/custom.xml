@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- The apps which do not have permission for apps to connect to USB devices. -->
+    <string name="config_disableUsbPermissionPackages">com.estrongs.android.pop</string>
+</resources>

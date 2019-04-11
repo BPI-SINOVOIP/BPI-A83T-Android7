@@ -1,0 +1,113 @@
+# label graphics device with a new type, we need
+# to allow write operation from appdomain
+
+# disp device labeling
+/dev/disp               u:object_r:disp_device:s0
+/dev/transform          u:object_r:disp_device:s0
+/dev/sw_sync            u:object_r:disp_device:s0
+
+# Bluetooth
+/dev/ttyS1              u:object_r:hci_attach_dev:s0
+/dev/rtk_btusb          u:object_r:hci_attach_dev:s0
+
+# Block labeling
+/dev/block/mmcblk0              u:object_r:root_block_device:s0
+/dev/block/by-name/boot         u:object_r:boot_block_device:s0
+/dev/block/by-name/system       u:object_r:system_block_device:s0
+/dev/block/by-name/recovery     u:object_r:recovery_block_device:s0
+
+#/dev/block/by-name/userdata     u:object_r:userdata_block_device:s0
+/dev/block/by-name/UDISK        u:object_r:userdata_block_device:s0
+/dev/block/by-name/metadata     u:object_r:metadata_block_device:s0
+/dev/block/by-name/cache        u:object_r:cache_block_device:s0
+/dev/block/by-name/misc         u:object_r:misc_block_device:s0
+/dev/block/by-name/alog         u:object_r:log_block_device:s0
+/dev/block/by-name/private      u:object_r:private_block_device:s0
+
+# factory reset protection partition
+/dev/block/by-name/frp          u:object_r:frp_block_device:s0
+
+# zram
+/dev/block/zram0                u:object_r:swap_block_device:s0
+
+#vold
+/system/bin/ntfs-3g.probe       u:object_r:fsck_exec:s0
+
+# Bluetooth
+/sys/class/rfkill/rfkill0/state u:object_r:sysfs_bluetooth_writable:s0
+
+# gps
+/system/bin/glgps       u:object_r:gpsd_exec:s0
+/dev/ttyS2              u:object_r:gps_device:s0
+
+# cedar_dev
+
+/dev/cedar_dev             u:object_r:cedar_device:s0
+/dev/googlevp9_dev         u:object_r:cedar_device:s0
+
+# preinstall
+/system/bin/bootclone.sh   u:object_r:preinstall_exec:s0
+/system/bin/precopy.sh     u:object_r:preinstall_exec:s0
+
+# /logger
+/logger(/.*)?              u:object_r:logger_file:s0
+
+# allwinner auto log
+/system/bin/logger.sh      u:object_r:logger_exec:s0
+/system/bin/log_service    u:object_r:logger_exec:s0
+
+# allwinner auto log_bg
+/system/bin/log_bg.sh      u:object_r:log_bg_exec:s0
+
+# wifi/bt mac
+/system/bin/setmacaddr      u:object_r:engsetmacaddr_exec:s0
+/system/bin/setbtmacaddr    u:object_r:engsetbtmacaddr_exec:s0
+
+#rild
+/dev/ttyUSB[0-4]  u:object_r:radio_device:s0
+/dev/ttyACM[0-4]  u:object_r:radio_device:s0
+
+
+# bootmusic
+/system/bin/bootmusic       u:object_r:bootanim_exec:s0
+
+#drmserver
+/dev/te_device              u:object_r:tee_device:s0
+/data/tee(/.*)?                u:object_r:tee_data_file:s0
+
+# opteearmtz00
+/dev/opteearmtz00              u:object_r:tee_device:s0
+
+# opteearmtz00
+/system/bin/tee_supplicant     u:object_r:optee_exec:s0
+
+# trim
+/system/bin/nand_trim     u:object_r:trim_exec:s0
+
+#busybox
+/sbin/busybox    u:object_r:busybox_exec:s0
+
+#paramopt
+/system/bin/paramopt        u:object_r:paramopt_exec:s0
+
+#keystore
+/dev/scdev                  u:object_r:scdev_device:s0
+
+#awinit
+/system/bin/auto_detect    u:object_r:awinit_exec:s0
+
+# awdisplay
+/system/bin/displayservice  u:object_r:awdisplay_exec:s0
+
+#awinit
+/system/bin/htserver    u:object_r:awinit_exec:s0
+
+#awinit
+/system/bin/format_device    u:object_r:awinit_exec:s0
+
+#sensor
+/dev/nanohub            u:object_r:sensors_device:s0
+/dev/nanohub_comms      u:object_r:sensors_device:s0
+
+#log_bg
+/data/local/boot_log(/.*)?    u:object_r:log_bg:s0

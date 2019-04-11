@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- who can receive boot completed broadcast -->
+    <string-array name="boot_completed_broadcast_whitelist">
+        <item>android</item>
+        <item>com.pt1.factoryreset</item>
+        <item>com.clock.pt1.keeptesting</item>
+        <item>com.pt1.keeptesting</item>
+        <item>com.clock.keeptesting</item>
+        <item>com.android.phone</item>
+        <item>com.android.providers.media</item>
+        <item>com.google.android.apps.maps</item>
+        <item>com.google.android.configupdater</item>
+        <item>com.google.android.gm</item>
+        <item>com.google.android.gms</item>
+        <item>com.google.android.googlequicksearchbox</item>
+        <item>com.google.android.inputmethod.pinyin</item>
+        <item>com.google.android.onetimeinitializer</item>
+        <item>com.google.android.partnersetup</item>
+        <item>com.google.android.syncadapters.contacts</item>
+        <item>com.google.android.talk</item>
+        <item>com.google.android.youtube</item>
+        <item>com.android.cts.splitapp</item>
+    </string-array>
+    <string-array name="background_services_whitelist">
+        <item>android</item>
+        <item>com.android</item>
+        <item>com.google</item>
+        <item>com.softwinner</item>
+        <item>com.clock</item>
+        <item>com.pt1</item>
+        <item>com.quicinc.vellamo</item>
+        <item>com.hp.android</item>
+        <item>com.android.server.telecom</item>
+        <item>com.android.phone</item>
+        <item>com.tencent.mobileqq</item>
+    </string-array>
+</resources>

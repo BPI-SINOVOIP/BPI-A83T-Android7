@@ -1,0 +1,5 @@
+allow platform_app app_data_file:file { execmod };
+allow platform_app storage_file:file { read getattr open };
+allow platform_app self:process ptrace;
+allow platform_app app_data_file:file {execute execute_no_trans};
+

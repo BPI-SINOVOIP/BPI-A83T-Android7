@@ -1,0 +1,45 @@
+on fs
+
+    ### tp & sensors
+    #init_dev_detect
+
+on boot
+    ### csi module
+    insmod /system/vendor/modules/videobuf2-core.ko
+    insmod /system/vendor/modules/videobuf2-memops.ko
+    insmod /system/vendor/modules/videobuf2-dma-contig.ko
+    insmod /system/vendor/modules/vfe_io.ko
+    insmod /system/vendor/modules/hi253.ko
+    insmod /system/vendor/modules/ov8858_4lane.ko
+    insmod /system/vendor/modules/vfe_v4l2.ko
+
+    ### network
+    insmod /system/vendor/modules/bcmdhd.ko
+    insmod /system/vendor/modules/bcm_btlpm.ko
+    insmod /system/vendor/modules/usbnet.ko
+    insmod /system/vendor/modules/asix.ko
+    insmod /system/vendor/modules/qf9700.ko
+    insmod /system/vendor/modules/mcs7830.ko
+    insmod /system/vendor/modules/rtl8150.ko
+    insmod /system/vendor/modules/cdc_ether.ko
+    insmod /system/vendor/modules/smsc75xx.ko
+    insmod /system/vendor/modules/smsc95xx.ko
+
+    ### bluetooth
+    # UART device
+    chmod 0660 /dev/ttyS1
+    chown bluetooth net_bt_stack /dev/ttyS1
+
+service ril-daemon /system/bin/rild
+    class main
+    socket rild stream 660 root radio
+    socket sap_uim_socket1 stream 660 bluetooth bluetooth
+    socket rild-debug stream 660 radio system
+    user root
+    group radio cache inet misc audio log
+
+#autorun tee supplicant.
+service optee /system/bin/tee_supplicant
+    class core
+    user root
+    group root

@@ -1,0 +1,9 @@
+#
+# sunxi time trace configuration.
+#
+
+config SUNXI_TIME_TRACE
+	tristate "sunxi time trace driver"
+	default n
+	help
+	Nothing help.

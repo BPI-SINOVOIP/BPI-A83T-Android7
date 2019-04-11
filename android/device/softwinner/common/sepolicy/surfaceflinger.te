@@ -1,0 +1,7 @@
+allow surfaceflinger disp_device:chr_file rw_file_perms;
+allow surfaceflinger sysfs:file write;
+allow surfaceflinger self:unix_stream_socket ioctl;
+allow surfaceflinger htserver_service:service_manager find;
+allow surfaceflinger activity_service:service_manager find;
+allow surfaceflinger awinit:binder call;
+allow surfaceflinger self:capability { net_admin dac_override };

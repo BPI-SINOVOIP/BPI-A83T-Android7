@@ -1,0 +1,8 @@
+card=0
+device=0
+period_size=1024
+period_count=2
+Headset detection=Uevent
+mixer "Speaker Function"=spk
+headset mixer "Speaker Function"=headset
+

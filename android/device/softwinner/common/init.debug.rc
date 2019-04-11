@@ -1,0 +1,12 @@
+on post-fs-data
+    mkdir /data/local/boot_log 0770 root root
+
+service log_bg /system/bin/sh /system/bin/log_bg.sh
+    class core
+    user root
+    group root system
+    oneshot
+    seclabel u:r:log_bg:s0
+
+on property:zygote.mount_fs_data_done=1
+    start log_bg

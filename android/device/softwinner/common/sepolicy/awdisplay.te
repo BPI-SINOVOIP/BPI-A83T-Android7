@@ -1,0 +1,24 @@
+# awdisplay - awdisplay service
+type awdisplay, domain, domain_deprecated;
+type awdisplay_exec, exec_type, file_type;
+
+init_daemon_domain(awdisplay)
+typeattribute awdisplay mlstrustedsubject;
+
+# Perform Binder IPC.
+binder_use(awdisplay)
+binder_call(awdisplay, binderservicedomain)
+binder_call(awdisplay, { appdomain autoplay_app })
+binder_call(awdisplay, bootanim)
+binder_service(awdisplay)
+
+# Binder IPC to bu, presently runs in adbd domain.
+binder_call(awdisplay, adbd)
+
+set_prop(awdisplay, system_prop)
+
+allow awdisplay surfaceflinger_service:service_manager { add find };
+allow awdisplay disp_device:chr_file rw_file_perms;
+allow awdisplay sysfs:file { read write open };
+allow awdisplay property_socket:sock_file write;
+allow awdisplay init:unix_stream_socket connectto;
