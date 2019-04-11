@@ -1,0 +1,6 @@
+service atwservice /system/bin/service_atw
+    class core
+    user root
+    group graphics drmrpc readproc
+    onrestart restart zygote
+    writepid /dev/stune/foreground/tasks

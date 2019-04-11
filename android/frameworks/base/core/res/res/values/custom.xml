@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- who can receive boot completed broadcast, null for all -->
+    <java-symbol type="array" name="boot_completed_broadcast_whitelist" />
+    <string-array name="boot_completed_broadcast_whitelist">
+    </string-array>
+    <!-- packages who's name in the array will not be killed by -->
+    <java-symbol type="array" name="background_services_whitelist" />
+    <string-array name="background_services_whitelist">
+        <item>android</item>
+        <item>com.android</item>
+        <item>com.google</item>
+        <item>com.softwinner</item>
+        <item>com.clock</item>
+        <item>google</item>
+    </string-array>
+
+    <java-symbol type="string" name="background_cleanup_notification_title" />
+    <string name="background_cleanup_notification_title">Memery not enough</string>
+    <java-symbol type="string" name="background_cleanup_notification_message" />
+    <string name="background_cleanup_notification_message">Touch to set up background cleanup.</string>
+    <java-symbol type="drawable" name="stat_background_cleanup" />
+
+    <java-symbol type="bool" name="config_showStatusBar" />
+    <!-- Whether a software status bar should be shown. -->
+    <bool name="config_showStatusBar">true</bool>
+    <java-symbol type="bool" name="config_expandStatusBar" />
+    <!-- Whether a software status bar can be expanded. -->
+    <bool name="config_expandStatusBar">true</bool>
+    <java-symbol type="bool" name="config_usbConnectedDataUnlocked" />
+    <!-- If this is true, when USB connected data will be unlocked. -->
+    <bool name="config_usbConnectedDataUnlocked">false</bool>
+    <java-symbol type="bool" name="config_enableScreenrecordChord" />
+    <!-- If this is true, key chords can be used to take a screenrecord on the device. -->
+    <bool name="config_enableScreenrecordChord">false</bool>
+
+    <java-symbol type="bool" name="config_disableDirectBootBlock" />
+    <!-- If this is true,boot optimization of direct boot will be enabled. -->
+    <bool name="config_disableDirectBootBlock">false</bool>
+
+    <java-symbol type="bool" name="config_delayStartComponent" />
+    <!-- If this is true,boot optimization of direct boot will be enabled. -->
+    <bool name="config_delayStartComponent">false</bool>
+
+    <!-- The default shortComponentName of Launcher which can be boot optimized   -->
+    <java-symbol type="string" name="launcher_shortComponentName" />
+    <string name="launcher_shortComponentName">com.android.launcher3/.Launcher</string>
+
+    <!-- Whether to enable boot opt  -->
+    <java-symbol type="bool" name="config_targetUseBootupOpz" />
+    <bool name="config_targetUseBootupOpz" translatable="false">false</bool>
+
+    <!-- The apps which do not have permission for apps to connect to USB devices. -->
+    <java-symbol type="string" name="config_disableUsbPermissionPackages" />
+    <string name="config_disableUsbPermissionPackages"></string>
+</resources>

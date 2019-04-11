@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="background_cleanup_notification_title">系统可用内存较低</string>
+    <string name="background_cleanup_notification_message">触摸可进行后台清理设置</string>
+</resources>

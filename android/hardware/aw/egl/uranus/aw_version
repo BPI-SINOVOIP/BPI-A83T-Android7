@@ -1,0 +1,10 @@
+mali-t760: r14p0-01rel0 um android nougat_mr1 arm64 018
+
+Build parameters:
+profile=tx041-release-64
+gpu=t76x
+hwver=r1p0
+kernel_modules=0
+android_version=nougat_mr1
+android_config_override=sunxi
+afbc=1

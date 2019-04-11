@@ -1,0 +1,2 @@
+on early-fs
+    insmod /system/vendor/modules/bma253.ko
