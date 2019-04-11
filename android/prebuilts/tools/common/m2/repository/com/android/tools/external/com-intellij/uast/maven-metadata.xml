@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.android.tools.external.com-intellij</groupId>
+  <artifactId>uast</artifactId>
+  <versioning>
+    <release>145.597.4</release>
+    <versions>
+      <version>145.587.3</version>
+      <version>145.597.4</version>
+    </versions>
+    <lastUpdated>20161214015611</lastUpdated>
+  </versioning>
+</metadata>
