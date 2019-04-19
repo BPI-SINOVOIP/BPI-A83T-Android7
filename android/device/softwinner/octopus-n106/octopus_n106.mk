@@ -71,9 +71,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
    ro.frp.pst=/dev/block/by-name/frp
 
 # usb
+ #Justin 20190419 Porting Start
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp \
-    ro.adb.secure=1
+    persist.sys.usb.config=mtp,adb\
+    ro.adb.secure=0
+#Justin 20190419 Porting End
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=25
@@ -105,11 +107,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.spk_dul.used=true \
     ro.dmic.used=false
 
+# Justin Porting 20190419 Start 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.timezone=Asia/Shanghai \
-    persist.sys.country=CN \
-    persist.sys.language=zh
-
+   	persist.sys.timezone=Asia/Taipei \
+	persist.sys.language=EN \
+	persist.sys.country=US
+# Justin Porting 20190419 End
 
 PRODUCT_AAPT_CONFIG := xlarge large
 PRODUCT_AAPT_PREF_CONFIG := tvdpi
