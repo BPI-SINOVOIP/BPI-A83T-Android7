@@ -23,8 +23,10 @@ PRODUCT_SUPPORTS_BOOT_SIGNER := false
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/by-name/system
 
 # copy init.xx.rc file for realtek wifi/bt module.
+# BPI-M3 WIFI
 PRODUCT_COPY_FILES += \
-    device/softwinner/common/init.wireless.realtek.rc:root/init.wireless.realtek.rc
+    device/softwinner/common/init.wireless.broadcom.rc:root/init.wireless.broadcom.rc
+
 
 PRODUCT_COPY_FILES += \
     device/softwinner/octopus-n106/kernel:kernel \
@@ -34,6 +36,11 @@ PRODUCT_COPY_FILES += \
     device/softwinner/octopus-n106/modules/modules/disp.ko:root/disp.ko \
     device/softwinner/octopus-n106/modules/modules/auto_detect.ko:recovery/root/auto_detect.ko \
     device/softwinner/octopus-n106/modules/modules/gslX680new.ko:recovery/root/gslX680new.ko \
+
+
+#BPI-M3 Porting 
+   PRODUCT_COPY_FILES += \
+	device/softwinner/octopus-n106/configs/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 PRODUCT_COPY_FILES += \
     device/softwinner/octopus-n106/configs/camera.cfg:system/etc/camera.cfg \

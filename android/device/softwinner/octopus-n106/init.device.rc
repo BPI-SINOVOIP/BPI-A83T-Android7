@@ -1,4 +1,4 @@
-import init.wireless.realtek.rc
+import init.wireless.broadcom.rc
 import init.debug.rc
 
 on init
@@ -21,7 +21,7 @@ on boot
     insmod /system/vendor/modules/vfe_v4l2.ko
 
     ### network
-    insmod /system/vendor/modules/usbnet.ko
+    #insmod /system/vendor/modules/usbnet.ko
     insmod /system/vendor/modules/asix.ko
     insmod /system/vendor/modules/qf9700.ko
     insmod /system/vendor/modules/mcs7830.ko

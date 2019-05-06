@@ -99,20 +99,20 @@ led_state = 0
 ;  dldo1 -- cvbs/av
 ;----------------------------------------------------------------------------------
 [power_sply]
-dcdc1_vol                  = 1003100
+dcdc1_vol                  = 1003300
 dcdc2_vol                  = 1000900
 dcdc3_vol                  = 1000900
 dcdc4_vol                  = 1000900
 dcdc5_vol                  = 1001500
 dcdc6_vol                  = 1000900
-aldo1_vol                  = 1800
+aldo1_vol                  = 1001800
 aldo2_vol                  = 1001800
 aldo3_vol                  = 1003000
-eldo2_vol                  = 1800
-dldo2_vol                  = 1800
-dldo4_vol                  = 2800
+eldo2_vol                  = 1001800
+dldo1_vol                  = 1003300
+dldo2_vol                  = 1003300
+dldo4_vol                  = 1003300
 fldo2_vol                  = 1000900
-dldo1_vol                  = 2800
 
 ;---------------------------------------------
 ;
@@ -132,13 +132,13 @@ dldo1_vol                  = 2800
 ;---------------------------------------------
 [gpio_bias]
 ;pa_bias         = "axp81x:dcdc1:3000"
-pb_bias         = "axp81x:dcdc1:3000"
-pc_bias         = "axp81x:dcdc1:3000"
+pb_bias         = "axp81x:dcdc1:3300"
+pc_bias         = "axp81x:dcdc1:3300"
 pd_bias         = "axp81x:aldo1:1800"
-pe_bias         = "axp81x:dcdc1:3000"
-pf_bias         = "axp81x:dcdc1:3000"
-pg_bias         = "axp81x:dcdc1:3000"
-ph_bias         = "axp81x:dcdc1:3000"
+pe_bias         = "axp81x:dcdc1:3300"
+pf_bias         = "axp81x:dcdc1:3300"
+pg_bias         = "axp81x:dcdc1:3300"
+ph_bias         = "axp81x:dcdc1:3300"
 pl_bias         = "axp81x:aldo3:3000"
 
 [card_boot]
@@ -1142,10 +1142,10 @@ lsm303d                   = 0
 [wlan]
 wlan_used           = 1
 wlan_busnum         = 1
-wlan_power          = ""
-wlan_io_regulator   = "axp81x_dldo1"
+wlan_power          = "vcc-wifi"
+wlan_io_regulator   = "vcc-wifi-io"
 wlan_regon          = port:PL02<1><default><default><0>
-wlan_hostwake       = port:PL03<0><default><default><0>
+wlan_hostwake       = port:PL03<4><default><default><0>
 
 ;--------------------------------------------------------------------------------
 ;bluetooth configuration
@@ -1156,8 +1156,8 @@ wlan_hostwake       = port:PL03<0><default><default><0>
 ;--------------------------------------------------------------------------------
 [bt]
 bt_used               = 1
-bt_power              =
-bt_io_regulator       = "axp81x_dldo1"
+bt_power              = "vcc-wifi"
+bt_io_regulator       = "vcc-wifi-io"
 bt_rst_n              = port:PL04<1><default><default><0>
 
 ;--------------------------------------------------------------------------------
@@ -1170,7 +1170,7 @@ bt_rst_n              = port:PL04<1><default><default><0>
 [btlpm]
 btlpm_used          = 1
 uart_index          = 1
-bt_wake             = port:PH05<1><default><default><1>
+bt_wake             = port:PH09<1><default><default><1>
 bt_hostwake         = port:PL05<6><default><default><0>
 
 ;--------------------------------------------------------------------------------
@@ -1548,7 +1548,7 @@ pmu_usbvol_pc              = 4400
 pmu_usbcur_pc              = 500
 pmu_pwroff_vol             = 3300
 pmu_pwron_vol              = 2600
-pmu_pekoff_time            = 8000
+pmu_pekoff_time            = 4000
 pmu_pekoff_func            = 0
 pmu_pekoff_en              = 1
 pmu_pekoff_delay_time      = 0
@@ -1632,10 +1632,10 @@ regulator8      = "axp81x_rtc none"
 regulator9      = "axp81x_aldo1 none vcc-dsi-18 vcc-csi2-18 vcc-lvds-18 vcc-efuse-18 vcc-hdmi-18 vcc-pd"
 regulator10     = "axp81x_aldo2 none vdd-drampll vdd-lpddr-18 vcc-pll vcc-adc vcc-cpvdd vcc-ldoin"
 regulator11     = "axp81x_aldo3 none vcc-avcc vcc-pl"
-regulator12     = "axp81x_dldo1 none vcc-wifi-io vcc-io2"
-regulator13     = "axp81x_dldo2 none vcc_dsi"
+regulator12     = "axp81x_dldo1 none vcc-io2"
+regulator13     = "axp81x_dldo2 none vcc-wifi vcc_dsi"
 regulator14     = "axp81x_dldo3 none afvcc-csi iovdd-csi"
-regulator15     = "axp81x_dldo4 none avdd-csi"
+regulator15     = "axp81x_dldo4 none vcc-wifi-io avdd-csi"
 regulator16     = "axp81x_eldo1 1 dvdd-csi-12"
 regulator17     = "axp81x_eldo2 1 "
 regulator18     = "axp81x_eldo3 1 dvdd-csi-18"
@@ -1964,7 +1964,7 @@ Vdevice_1           = port:PH11<5><1><2><default>
 ;s_uart_used  --s_uart0 whether used for arisc debugging
 ;----------------------------------------------------------------------------------
 [s_uart0]
-s_uart_used       = 1
+s_uart_used       = 0
 s_uart_tx         = port:PL02<2><default><default><default>
 s_uart_rx         = port:PL03<2><default><default><default>
 
