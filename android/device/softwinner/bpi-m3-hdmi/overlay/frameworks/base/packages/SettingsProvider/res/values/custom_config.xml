@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Default enable freeform window  -->
+    <integer name="def_force_resizable_activities" translatable="false">0</integer>
+    <!-- Default kill background services -->
+    <bool name="def_kill_background_services" translatable="false">true</bool>
+    <!-- Default background services limit count -->
+    <integer name="def_background_services_limit_count" translatable="false">4</integer>
+</resources>

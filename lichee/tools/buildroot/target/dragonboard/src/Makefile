@@ -60,6 +60,11 @@ core_objs = core/core.o core/script_parser.o \
 			view/view.o view/df_view_pad.o view/tp_track.o \
 			view/camera_sun8iw6p1_for_linux3_10.o
 else
+ifeq ($(LICHEE_BOARD),bpi-m3-hdmi)
+core_objs = core/core.o core/script_parser.o \
+                        view/view.o view/df_view_pad.o view/tp_track.o \
+                        view/camera_sun8iw6p1_for_linux3_10.o
+else
 core_objs = core/core.o core/script_parser.o \
 			view/view.o view/df_view_pad.o view/tp_track.o \
 			view/camera_sun8iw6p1.o
