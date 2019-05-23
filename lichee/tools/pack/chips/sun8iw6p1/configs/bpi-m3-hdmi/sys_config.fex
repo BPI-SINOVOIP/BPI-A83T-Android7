@@ -222,7 +222,7 @@ pll_video1       = 297
 ;*****************************************************************************
 [dram_para]
 dram_clk        = 672
-dram_type       = 3
+dram_type       = 7
 dram_zq         = 0x3bbb
 dram_odt_en     = 1
 dram_para1      = 0x10f40000
