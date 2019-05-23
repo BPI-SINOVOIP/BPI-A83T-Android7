@@ -108,11 +108,19 @@ dcdc6_vol                  = 1000900
 aldo1_vol                  = 1800
 aldo2_vol                  = 1001800
 aldo3_vol                  = 1003000
-eldo2_vol                  = 1800
-dldo2_vol                  = 1800
+eldo1_vol		   = 1200
+eldo2_vol                  = 0
+eldo3_vol		   = 0
+dldo1_vol		   = 3100
+dldo2_vol                  = 3300
+dldo3_vol		   = 2500
 dldo4_vol                  = 2800
+fldo1_vol		   = 0
 fldo2_vol                  = 1000900
-dldo1_vol                  = 2800
+fldo3_vol		   = 0
+gpio0_vol                  = 1003100
+gpio1_vol                  = 1003100
+dc1sw_vol		   = 3300
 
 ;---------------------------------------------
 ;
